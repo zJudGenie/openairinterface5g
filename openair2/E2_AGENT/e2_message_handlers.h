@@ -1,5 +1,6 @@
 //
-// Created by root on 10/28/22.
+// Created by Eugenio Moro on 04/24/23.
+// Edited by Rey P. on 08/11/25.
 //
 
 #ifndef OPENAIRINTERFACE_E2_MESSAGE_HANDLERS_H
@@ -16,6 +17,10 @@
 #include <netinet/in.h>
 #include <string.h>
 #include <stdbool.h>
+#include <time.h>
+
+#include "common/ran_context.h"
+#include "openair2/LAYER2/NR_MAC_gNB/nr_mac_gNB.h"
 
 
 typedef struct sockaddr_in sockaddr_in;
@@ -36,6 +41,6 @@ void free_ran_param_map(RANParamMapEntry **map);
 void free_ue_list(UeListM* ue_list_m);
 
 // specific ran write functions
-void set_ue_properties(int rnti, bool prop_1, float prop_2);
+void set_ue_properties(UeInfoM* ue_info);
 void apply_properties_to_ue_list(UeListM* ue_list);
 void initialize_ues_if_needed();

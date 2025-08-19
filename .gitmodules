@@ -1,4 +1,4 @@
 [submodule "openair2/E2_AGENT/oai-oran-protolib"]
 	path = openair2/E2_AGENT/oai-oran-protolib
-	url = https://github.com/ANTLab-polimi/oai-oran-protolib.git
-	branch = mrn-base
+	url = https://github.com/zJudGenie/oai-oran-protolib.git
+	branch = project2-impl
